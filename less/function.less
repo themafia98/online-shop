@@ -1,0 +1,48 @@
+/* Pavel Petrovich (C) 2018 */
+
+.radius(@R1,@R2,@R3,@R4){
+  -webkit-border-radius: @R1 @R2 @R3 @R4;
+  -moz-border-radius: @R1 @R2 @R3 @R4;
+  -ms-border-radius: @R1 @R2 @R3 @R4;
+  border-radius: @R1 @R2 @R3 @R4;
+}
+.radiusParam(@allR){
+  -webkit-border-radius: @allR;
+  -moz-border-radius: @allR;
+  -ms-border-radius: @allR;
+  border-radius: @allR;
+}
+
+.SizeP(@w;@h){
+  width:@w;
+  height: @h;
+}
+
+.flex(){
+  display: -webkit-flex;
+  dispaly: -moz-flex;
+  dispaly: -o-flex;
+  display: flex;
+}
+
+.posit (@left; @top;) when (ispixel(@left,@top))  {
+  left: @left;
+  top: @top;
+}
+
+.CentralPosition(){
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.MaxW-H(){
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.central-flex(){
+  .flex();
+  align-items: center;
+}

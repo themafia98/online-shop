@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Just+Another+Hand");
+
+
+.corusel {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 463px;
+  user-select: none;
+  background-color: #1c1c1c;
+  box-shadow: 0 11px 22px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.24);
+}
+.corusel input {
+  display: none;
+}
+.corusel .slide_img {
+  display: -webkit-flex;
+  dispaly: -moz-flex;
+  dispaly: -o-flex;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  z-index: -1;
+}
+.corusel .slide_img img {
+  width: inherit;
+  height: inherit;
+}
+.corusel .slide_img .prev, .corusel .slide_img .next {
+  width: 12%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  background-color: unset;
+  z-index: 99;
+  transition: .45s;
+  cursor: pointer;
+  text-align: center;
+}
+.corusel .slide_img .next {
+  right: 0;
+}
+.corusel .slide_img .prev {
+  left: 0;
+}
+
+.corusel .slide_img .prev span, .corusel .slide_img .next span {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: solid 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.corusel .slide_img .prev span {
+  border-color: transparent black transparent transparent;
+  right: 35%;
+}
+.corusel .slide_img .next span {
+  border-color: transparent transparent transparent black;
+  left: 35%;
+}
+.corusel #nav_slide {
+  width: 100%;
+  bottom: 12%;
+  height: 11px;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+  cursor: default;
+}
+.corusel #nav_slide .dots {
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  margin: 0 3px;
+  position: relative;
+  display: inline-block;
+  background-color: #709b1d;
+  transition: .4s;
+  cursor: pointer;
+}
+.corusel #nav_slide #dot1:hover,
+corusel #nav_slide #dot2:hover,
+corusel #nav_slide #dot3:hover
+{
+  background: black;
+}
+
+
+
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four {
+  z-index: 9;
+  animation: scroll 1s ease-in-out;
+}
+
+#i1:checked ~ #nav_slide #dot1,
+#i2:checked ~ #nav_slide #dot2,
+#i3:checked ~ #nav_slide #dot3
+ {
+  background: black;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 685px) {
+  .corusel {
+    border: none;
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%;
+  }
+  .corusel .slide_img .prev, .corusel .slide_img .next {
+    width: 15%;
+  }
+  .corusel .slide_img .prev span, .corusel .slide_img .next span {
+    border: solid 12px;
+  }
+  .corusel .slide_img .prev span {
+    border-color: transparent #fff transparent transparent;
+  }
+  .corusel .slide_img .next span {
+    border-color: transparent transparent transparent #fff;
+  }
+  .corusel #nav_slide .dots {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .corusel {
+    border: none;
+     width: 100%;
+    height: 0;
+    padding-bottom: 55%;
+  }
+}

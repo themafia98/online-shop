@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/corusel.css">
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
+    <link rel="stylesheet/less" type="txt/css" href="less/media.less" />
+    <!-- ICON !-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- FONTS GOOGLE !-->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200" rel="stylesheet">
+
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="container-base">
+    <div class="container">
+        <div class="row">
+        <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12">
+          <div class="box-menu-button--active">
+            <a class="box-menu__top-main-nav--active" href="index.html" title="main page">
+                <i class="fas fa-home"></i>Home </a>
+          </div>
+            <div class="box-menu-button">
+            <a class="box-menu__top-main-nav" href="account.html">
+                <i class="fas fa-user"></i> My account </a>
+            </div>
+            <div class="box-menu-button">
+            <a class="box-menu__top-main-nav" href="item-card.html">
+                <i class="fas fa-shopping-cart"></i> Shopping Cart </a>
+            </div>
+            <div class="box-menu-button">
+            <a  class="box-menu__top-main-nav" href="item-card.html">
+                <i class="fas fa-check"></i>Checkout </a>
+        </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-4 col-md-2">
+            <div class="language">
+                <div class="language__btn-language">
+                    <a class="language__btn-language__content" href="#">
+                        <img class="flags" src="images/icons/the-united-kingdom-flag-icon.jpg" alt="flag-icon">
+                        English <i class="fas fa-angle-down"></i></a>
+                </div>
+                <div class="language__btn-language">
+                    <a class="language__btn-language__content" href="#">
+                        <i class="fas fa-dollar-sign"></i>  Doller
+                        <i class="fas fa-angle-down md--position"></i></a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+        </div>
+    </nav>
+
+    <div class="container-two-base">
+        <div class="container">
+            <div class="row">
+            <div class="col-xl-6  col-lg-6 col-md-6 col-sm-4">
+                <h1 class="main-logo"><span class="main-logo--greenBold">LO</span>GO</h1>
+            </div>
+            <div class="col-xl-6  col-lg-6 col-md-6 col-sm-8">
+                <div class="auth--position">
+              <p class="text-auth--center">
+                  <a class="two-base__Auth" href="#">LOGIN</a> or
+                  <a class="two-base__Auth" href="#">CREAT ACCOUNT</a>
+              </p>
+                    <div class="box-node">
+                        <img class="box-node__img" src="images/icons/note-icon.png" alt="icon">
+                        <input type="submit" value="найти" onclick="test();">
+                        <div class="elipse-node"><span class="elipse-value"></span></div>
+                    </div>
+                    <div class="box-shop">
+                        <img class="box-node__img" src="images/icons/shoping-icon.png" alt="icon">
+                        <input type="submit" value="найти" onclick="test();">
+                        <div class="elipse-node"><span class="elipse-value"></span></div>
+                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-three-base">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8">
+                <ul class="catalogs-list">
+                    <li class="catalog-type">
+                        <div class="catalog-btn">
+                        <a class="catalog-page" href="#">PHONE</a>
+                        </div>
+                    </li>
+                    <li class="catalog-type">
+                        <div class="catalog-btn">
+                        <a class="catalog-page" href="catalog-dasktop.html">DESKTOP</a>
+                        </div>
+                    </li>
+
+                    <li class="catalog-type">
+                        <div class="catalog-btn">
+                        <a class="catalog-page" href="catalog-laptop.html">LAPTOP</a>
+                        </div>
+                    </li>
+                    <li class="catalog-type">
+                        <div class="catalog-btn">
+                        <a class="catalog-page" href="catalog-accessories.html">ACCESSORIES</a>
+                        </div>
+                    </li>
+                    <li class="catalog-type">
+                        <div class="catalog-btn">
+                        <a class="catalog-page" href="catalog-software.html">SOFTWARE</a>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="search-block">
+
+                    <input type="search" name="q" placeholder="Search Your Item........">
+                        <input type="submit" value="найти" onclick="test();">
+                        <div class="search-btn "><img class="central-search" alt="icon" src="images/icons/search-icon.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="corusel">
+        <input type="radio" id="i1" name="images" checked/>
+        <input type="radio" id="i2" name="images" />
+        <input type="radio" id="i3" name="images" />
+
+        <div class="slide_img" id="one">
+            <img src="images/corusel-items/items1.png" alt="item">
+            <img class="corusel--add" src="images/main-logo-phone.png" alt="phone">
+            <label class="prev" for="i3"><span></span></label>
+            <label class="next" for="i2"><span></span></label>
+        </div>
+
+        <div class="slide_img" id="two">
+            <img src="images/corusel-items/items1.png" alt="item">
+            <label class="prev" for="i1"><span></span></label>
+            <label class="next" for="i3"><span></span></label>
+        </div>
+
+        <div class="slide_img" id="three">
+            <img src="images/corusel-items/items1.png" alt="item">
+            <img class="corusel--add" src="images/main-logo-phone.png" alt="phone">
+            <label class="prev" for="i2"><span></span></label>
+            <label class="next" for="i1"><span></span></label>
+        </div>
+
+        <div id="nav_slide">
+            <label for="i1" class="dots" id="dot1"></label>
+            <label for="i2" class="dots" id="dot2"></label>
+            <label for="i3" class="dots" id="dot3"></label>
+        </div>
+    </div>
+
+    <div class="four-base">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+                <div class="rect-group">
+            <div class="rectangle--green">
+                <a href="#">
+                <div class="green-rect__img">
+                    <p class="rect-text">
+                <img class="rect__img--position"  src="images/icons/paper-plane-icon.png" alt="icon">
+                        <span class="rect-text--style"> First Shipping</span>
+                    </p>
+                </div>
+                </a>
+            </div>
+            <div class="rectangle--green">
+                <a href="#">
+                    <div class="green-rect__img">
+                        <p class="rect-text">
+                            <img class="rect__img--position"  src="images/icons/lock-icon.png" alt="icon">
+                            <span class="rect-text--style"> Secure Store</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="rectangle--green">
+                <a href="#">
+                    <div class="green-rect__img">
+                        <p class="rect-text">
+                            <img class="rect__img--position"  src="images/icons/watch-icon.png" alt="icon">
+                            <span class="rect-text--style"> Save Time</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="rectangle--green">
+                <a href="#">
+                    <div class="green-rect__img">
+                        <p class="rect-text">
+                            <img class="rect__img--position"  src="images/icons/pay-icon.png" alt="icon">
+                            <span class="rect-text--style"> Pay on Delivery</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+<section>
+    <div class="main-content-box">
+        <div class="container">
+            <div class="col-lg-12 ">
+                <div class="items-react-one">
+                    <div class="items-react-one--green-line">
+                        <div class="row">
+                        <div class="col-lg-1">
+                        <div class="to-left-items">
+                            <img class="Left-bard" alt="icon" src="images/icons/left-bard.png">
+                            <input class="btn-left" type="submit" value="найти" onclick="test();">
+                        </div>
+                            </div>
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-4">
+                        </div>
+                            <div class="col-lg-4">
+                                <div class="to-left-items--float-right">
+                                    <img class="Left-bard" alt="icon" src="images/icons/right-bard.png">
+                                    <input class="btn-left" type="submit" value="найти" onclick="test();">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="subscribe-container">
+        <div class="container">
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="main-content-box-two">
+        <div class="container">
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="info-block">
+        <div class="container">
+
+        </div>
+
+    </div>
+    <div class="foot">
+        <div class="container">
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/less.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/MyPagination.js"></script>
+<script src="js/wow.js"></script>
+
+
+<script>
+
+    new WOW().init();
+
+    <!-- Пагинация инициализация. Сам скрипт в MyPagination.js  !-->
+
+    var pager = new pag.Pager();
+    $(document).ready(function() {
+        // количество выводимых блоков
+        pager.paragraphsPerPage = 1;
+        // контентная часть
+        pager.pagingContainer = $('#content');
+        // обозначаем блок
+        pager.paragraphs = $('div.this', pager.pagingContainer);
+        pager.showPage(1);
+    });
+
+
+    a = 'Я поиск!';
+    function test() {
+        console.log(a);
+    }
+
+
+</script>
+
+</body>
+
+
+</html>

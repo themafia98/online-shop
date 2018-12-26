@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>desktop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
+    <link rel="stylesheet/less" type="txt/css" href="less/media.less" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <!-- ICON !-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- FONTS GOOGLE !-->
+
+</head>
+<body>
+
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/less.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/MyPagination.js"></script>
+<script src="js/wow.js"></script>
+
+
+<script>
+
+    new WOW().init();
+
+    <!-- Пагинация инициализация. Сам скрипт в MyPagination.js  !-->
+
+    var pager = new pag.Pager();
+    $(document).ready(function() {
+        // количество выводимых блоков
+        pager.paragraphsPerPage = 1;
+        // контентная часть
+        pager.pagingContainer = $('#content');
+        // обозначаем блок
+        pager.paragraphs = $('div.this', pager.pagingContainer);
+        pager.showPage(1);
+    });
+</script>
+
+</body>
+
+
+</html>
