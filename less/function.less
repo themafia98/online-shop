@@ -46,3 +46,22 @@
   .flex();
   align-items: center;
 }
+
+.BgSize(@size){
+  -moz-background-size: @size; /* Firefox 3.6+ */
+  -webkit-background-size: @size; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: @size; /* Opera 9.6+ */
+  background-size: @size;
+}
+
+.BgHTML3(){
+  background: url(../images/main-bg-2.png) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+}
+

@@ -36,12 +36,12 @@ pag.Pager = function() {
 
     var renderControls = function(container, currentPage, numPages) {
 // разметка (цикл)
-        var pagingControls = 'Work №: <ul>';
+        var pagingControls = '<ul>';
         for (var i = 1; i <= numPages; i++) {
             if (i != currentPage) {
-                pagingControls += '<li><a class="size-a" href="#" onclick="pager.showPage(' + i + '); return false;">' + i + '</a></li>';
+                pagingControls += '<li><a class="list-pagination" href="#" onclick="pager.showPage(' + i + '); return false;">' + i + '</a></li>';
             } else {
-                pagingControls += '<li>' + i + '</li>';
+                pagingControls += '<li class="list-pagination-unActive">' + i + '</li>';
             }
         }
 
