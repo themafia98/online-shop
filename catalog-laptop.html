@@ -17,16 +17,492 @@
 </head>
 <body>
 
+<header>
+    <div class="mobile-nav">
+        <div onclick="downn();" class="wrapper">
+            <div class="menuToggle"><img alt="menu" src="images/menu.svg"> </div>
+            <ul class="menu clearfix">
+
+                <li class="mobile-navigation"><a href="account.html">Login</a></li>
+                <br/><hr>
+                <li class="mobile-navigation"><a href="catalog-dasktop.html">Register</a></li>
+                <br/><hr>
+                <li class="mobile-navigation"><a href="catalog-page.html">My account</a></li>
+                <br/><hr>
+                <li class="mobile-navigation"><a href="contact.html">Catalog</a></li>
+                <br/><hr>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <nav>
+        <div class="container-base">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12">
+                        <div class="box-menu-button--active">
+                            <a class="box-menu__top-main-nav--active" href="index.html" title="main page">
+                                <i class="fas fa-home"></i>Home </a>
+                        </div>
+                        <div class="box-menu-button">
+                            <a class="box-menu__top-main-nav" href="account.html">
+                                <i class="fas fa-user"></i> My account </a>
+                        </div>
+                        <div class="box-menu-button">
+                            <a class="box-menu__top-main-nav" href="item-card.html">
+                                <i class="fas fa-shopping-cart"></i> Shopping Cart </a>
+                        </div>
+                        <div class="box-menu-button">
+                            <a  class="box-menu__top-main-nav" href="item-card.html">
+                                <i class="fas fa-check"></i>Checkout </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-4 col-md-2">
+                        <div class="language">
+                            <div class="language__btn-language">
+                                <a class="language__btn-language__content" href="#">
+                                    <img class="flags" src="images/icons/the-united-kingdom-flag-icon.jpg" alt="flag-icon">
+                                    English <i class="fas fa-angle-down"></i></a>
+                            </div>
+                            <div class="language__btn-language">
+                                <a class="language__btn-language__content" href="#">
+                                    <i class="fas fa-dollar-sign"></i>  Doller
+                                    <i class="fas fa-angle-down md--position"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-two-base">
+        <div class="container downjs">
+            <div class="row">
+                <div class="col-xl-6  col-lg-6 col-md-6 col-sm-4">
+                    <h1 class="main-logo"><span class="main-logo--greenBold">LO</span>GO</h1>
+                </div>
+                <div class="col-xl-6  col-lg-6 col-md-6 col-sm-8">
+                    <div class="auth--position">
+                        <p class="text-auth--center">
+                            <a class="two-base__Auth" href="#">LOGIN</a> or
+                            <a class="two-base__Auth" href="#">CREAT ACCOUNT</a>
+                        </p>
+                        <div class="box-node">
+                            <img class="box-node__img" src="images/icons/note-icon.png" alt="icon">
+                            <input type="submit" value="найти" onclick="test();">
+                            <div class="elipse-node"><span class="elipse-value"></span></div>
+                        </div>
+                        <div class="box-shop">
+                            <img class="box-node__img" src="images/icons/shoping-icon.png" alt="icon">
+                            <input type="submit" value="найти" onclick="test();">
+                            <div class="elipse-node"><span class="elipse-value"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-three-base">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8">
+                    <ul class="catalogs-list">
+                        <li class="catalog-type">
+                            <div class="catalog-btn">
+                                <a class="catalog-page" href="catalog-phone.html">PHONE</a>
+                            </div>
+                        </li>
+                        <li class="catalog-type">
+                            <div class="catalog-btn">
+                                <a class="catalog-page" href="catalog-dasktop.html">DESKTOP</a>
+                            </div>
+                        </li>
+
+                        <li class="catalog-type">
+                            <div class="catalog-btn--active">
+                                <a class="catalog-page--active" href="catalog-laptop.html">LAPTOP</a>
+                            </div>
+                        </li>
+                        <li class="catalog-type">
+                            <div class="catalog-btn">
+                                <a class="catalog-page" href="catalog-accessories.html">ACCESSORIES</a>
+                            </div>
+                        </li>
+                        <li class="catalog-type">
+                            <div class="catalog-btn">
+                                <a class="catalog-page" href="catalog-software.html">SOFTWARE</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="search-block">
+
+                        <input type="search" name="q" placeholder="Search Your Item........">
+                        <input type="submit" value="найти" onclick="test();">
+                        <div class="search-btn "><img class="central-search" alt="icon" src="images/icons/search-icon.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</header>
+
+<section>
+    <div class="catalogs--height">
+    <div class="container">
+        <div class="bread-crumb">
+            <p class="bred-crumb__text"><a class="bred-crumb__text" href="index.html">Home</a> / <a  class="bred-crumb__text" href="#">Laptop</a> </p>
+        </div>
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+                <div class="row">
+                    <div class="banner-grid">
+                        <p class="banner-grid__text">BEST CONFIGURE AND
+                            SUPER BRAND</p>
+                    </div>
+                    <div class="banner-grid__discount">
+                        <p class="banner-grid__discount__text">UP TO
+                            50% OFF
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                <div class="type-catalog--green">
+                    <p class="type-catalog__text mobile--position">category</p>
+                    <ul class="catalog-list">
+                        <li class="catalog-list__item" ><a class="catalog-list__link--black" href="#"> Smart Phone</a></li>
+                        <li class="catalog-list__item"><a class="catalog-list__link--black"  href="#"> dasktop </a></li>
+                        <li class="catalog-list__item"><a class="catalog-list__link--black--active" href="#"> laptop</a></li>
+                        <li class="catalog-list__item"><a class="catalog-list__link--black" href="#"> accessories       </a></li>
+                        <li class="catalog-list__item"><a class="catalog-list__link--black" href="#"> software</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
+
+                <ul class="list-items clearfix">
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add " type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main--phones-rect7.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add " type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main--phones-rect7.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add" type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main-phones-rect2.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+
+                <div class="brands-catalog--green brands-catalog--mobile-watch only-for-this">
+                    <p class="type-catalog__text">By Brand</p>
+                    <ul class="catalog-list">
+                        <li class="catalog-list__item__brand"  ><input  value='hp' id="hp" type="checkbox" class="catalog-list__link--black" ><label class="catalog-list__brands--padding" for="hp"> HP</label></li>
+                        <li class="catalog-list__item__brand"  ><input value='dell' id="dell" type="checkbox" class="catalog-list__link--black" ><label class="catalog-list__brands--padding" for="dell"> DELL </label></li>
+                        <li class="catalog-list__item__brand"  ><input value='asus' id="asus" type="checkbox" class="catalog-list__link--black" ><label class="catalog-list__brands--padding" for="asus"> ASUS</label></li>
+                        <li class="catalog-list__item__brand"><input value='samsung' id="samsung" type="checkbox" class="catalog-list__link--black" ><label class="catalog-list__brands--padding" for="samsung"> SAMSUNG</label></li>
+                        <li class="catalog-list__item__brand"><input value='toshiba' id="toshiba" type="checkbox" class="catalog-list__link--black" ><label class="catalog-list__brands--padding" for="toshiba"> TOSHIBA</label></li>
+                    </ul>
+                </div>
+                <div class="price-catalog--paddingTop">
+                    <div class="brands-catalog--green brands-catalog--mobile-top only-for-this-two">
+                        <p class="type-catalog__text">By Price</p>
+                        <ul class="catalog-list">
+                            <li class="catalog-list__item" ><a class="catalog-list__link--black" href="#"> $500 - $900 </a></li>
+                            <li class="catalog-list__item"><a class="catalog-list__link--black"  href="#"> $1000 - $2000  </a></li>
+                            <li class="catalog-list__item"><a class="catalog-list__link--black" href="#"> $3000 - $4000 </a></li>
+                            <li class="catalog-list__item"><a class="catalog-list__link--black" href="#"> $5000 - $6000 </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
+
+                <ul class="list-items clearfix">
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add " type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main--phones-rect7.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add " type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main--phones-rect7.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add" type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main-phones-rect2.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
+
+                <ul class="list-items clearfix">
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add " type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main--phones-rect7.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add " type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main--phones-rect7.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="card-wrapper catalog-cards">
+                            <a href="#" class="item">
+                                <div class="item-photo">
+                                    <input class="item-card__btn-item-add" type="button" value="Добавить в корзину" onclick="test();">
+                                    <img src="images/main-phones-rect2.png" alt="item">
+                                </div>
+                                <p class="price">500 $</p>
+                                <div class="card-item__about">
+                                    <p class="card-title"> Smart Phone  Primo V1</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="info-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="info-container_information">
+                        <div class="info-container-__title-box">
+                            <h3 class="info-block__title">INFORMATION</h3>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> ABOUT US</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> CUSTOMER SERVICE</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> PRIVACY POLICY</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> SITE MAP</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="info-container_information">
+                        <div class="info-container-__title-box">
+
+                            <h3 class="info-block__title"> WHY BUY FROM US</h3>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> ABOUT US</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> SHIPPING & RETURNS</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> INTERNATIONAL SHIPPING</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> AFFILIATES</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> GROUP SALES</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="info-container_information">
+                        <div class="info-container-__title-box">
+                            <h3 class="info-block__title">MY ACCOUNT</h3>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> SIGN IN</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black"  href="#"> VIEW CART</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> MY WHISHLIST</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> TRACK MY ORDER</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 ">
+                    <div class="info-container_information">
+                        <div class="info-container-__title-box">
+                            <h3 class="info-block__title">CONTACT</h3>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item"> BELARUS,MINSK</li>
+                            <li class="footer-list__item"> +375 29 000 000</li>
+                            <li class="footer-list__item"> +375 44 000 000</li>
+                            <li class="footer-list__item"> mag@mag.com</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-pay">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 ">
+                    <div class="info_pay__we-accept">
+                        <p class="info_pay__text">WE ACCEPT</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 ">
+                    <img class="footer-icon--down footer-icon--resize" src="images/icons/cards/visa_electron.png" alt="visa">
+                    <img class="footer-icon--down footer-icon--resize" src="images/icons/cards/master-card.png" alt="mc">
+                    <img class="footer-icon--down footer-icon--resize" src="images/icons/cards/american-express.png" alt="ae">
+                    <img class="footer-icon--down footer-icon--resize" src="images/icons/cards/cirrus.png" alt="cir">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 ">
+                    <div class="info_pay__we-accept">
+                        <p class="info_pay__text">FOLLOW US</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 ">
+
+                    <img class="footer-icon--down" src="images/icons/social-network/fb.png" alt="fb">
+                    <img class="footer-icon--down" src="images/icons/social-network/tw.png" alt="tw">
+                    <img class="footer-icon--down" src="images/icons/social-network/google.png" alt="google">
+                    <img class="footer-icon--down" src="images/icons/social-network/be.png" alt="be">
+                    <img  class="footer-icon--down" src="images/icons/social-network/ball.png" alt="ball">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="foot__title-box">
+                    <h3>Copyright by Pavel</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
 
 
 
 
 
 
-<script src="js/jquery.min.js"></script>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/less.js"></script>
-<script src="js/burger.js"></script>
 <script src="js/MyPagination.js"></script>
+<script src="js/burger.js"></script>
 <script src="js/wow.js"></script>
 
 

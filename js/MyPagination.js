@@ -9,7 +9,6 @@ pag.Pager = function() {
     //  страницы
     this.numPages = function() {
         var numPages = 0;
-        //          ('div.z')                               5
         if (this.paragraphs != null && this.paragraphsPerPage != null) {
             numPages = Math.ceil(this.paragraphs.length / this.paragraphsPerPage); // наименьшее целое
         }
