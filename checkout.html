@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Checkout</title>
+    <title>desktop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet/less" type="text/css" href="less/style.less" />
@@ -16,17 +16,421 @@
 
 </head>
 <body>
+<header>
+    <div class="mobile-nav">
+        <div onclick="downn();" class="wrapper">
+            <div class="menuToggle"><img alt="menu" src="images/menu.svg"> </div>
+            <ul class="menu clearfix">
+
+                <li class="mobile-navigation"><a href="account.html">Login</a></li>
+                <br/><hr>
+                <li class="mobile-navigation"><a href="catalog-dasktop.html">Register</a></li>
+                <br/><hr>
+                <li class="mobile-navigation"><a href="catalog-page.html">My account</a></li>
+                <br/><hr>
+                <li class="mobile-navigation"><a href="contact.html">Catalog</a></li>
+                <br/><hr>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <nav>
+        <div class="container-base">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12">
+                        <div class="box-menu-button--active">
+                            <a class="box-menu__top-main-nav--active" href="index.html" title="main page">
+                                <i class="fas fa-home"></i>Home </a>
+                        </div>
+                        <div class="box-menu-button">
+                            <a class="box-menu__top-main-nav" href="account.html">
+                                <i class="fas fa-user"></i> My account </a>
+                        </div>
+                        <div class="box-menu-button">
+                            <a class="box-menu__top-main-nav" href="item-card.html">
+                                <i class="fas fa-shopping-cart"></i> Shopping Cart </a>
+                        </div>
+                        <div class="box-menu-button">
+                            <a  class="box-menu__top-main-nav" href="item-card.html">
+                                <i class="fas fa-check"></i>Checkout </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-4 col-md-2">
+                        <div class="language">
+                            <div class="language__btn-language">
+                                <a class="language__btn-language__content" href="#">
+                                    <img class="flags" src="images/icons/the-united-kingdom-flag-icon.jpg" alt="flag-icon">
+                                    English <i class="fas fa-angle-down"></i></a>
+                            </div>
+                            <div class="language__btn-language">
+                                <a class="language__btn-language__content" href="#">
+                                    <i class="fas fa-dollar-sign"></i>  Doller
+                                    <i class="fas fa-angle-down md--position"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-two-base">
+        <div class="container downjs">
+            <div class="row">
+                <div class="col-xl-6  col-lg-6 col-md-6 col-sm-4">
+                    <h1 class="main-logo"><span class="main-logo--greenBold">LO</span>GO</h1>
+                </div>
+                <div class="col-xl-6  col-lg-6 col-md-6 col-sm-8">
+                    <div class="auth--position">
+                        <p class="text-auth--center">
+                            <a class="two-base__Auth" href="#">LOGIN</a> or
+                            <a class="two-base__Auth" href="#">CREAT ACCOUNT</a>
+                        </p>
+                        <div class="box-node">
+                            <img class="box-node__img" src="images/icons/note-icon.png" alt="icon">
+                            <input type="submit" value="найти" onclick="test();">
+                            <div class="elipse-node"><span class="elipse-value"></span></div>
+                        </div>
+                        <div class="box-shop">
+                            <img class="box-node__img" src="images/icons/shoping-icon.png" alt="icon">
+                            <input type="submit" value="найти" onclick="test();">
+                            <div class="elipse-node"><span class="elipse-value"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-three-base">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8">
+                    <ul class="catalogs-list">
+                        <li class="catalog-type">
+                            <div class="catalog-btn">
+                                <a class="catalog-page" href="catalog-phone.html">PHONE</a>
+                            </div>
+                        </li>
+                        <li class="catalog-type">
+                            <div class="catalog-btn--active">
+                                <a class="catalog-page--active" href="catalog-dasktop.html">DESKTOP</a>
+                            </div>
+                        </li>
+
+                        <li class="catalog-type">
+                            <div class="catalog-btn">
+                                <a class="catalog-page" href="catalog-laptop.html">LAPTOP</a>
+                            </div>
+                        </li>
+                        <li class="catalog-type">
+                            <div class="catalog-btn">
+                                <a class="catalog-page" href="catalog-accessories.html">ACCESSORIES</a>
+                            </div>
+                        </li>
+                        <li class="catalog-type">
+                            <div class="catalog-btn">
+                                <a class="catalog-page" href="catalog-software.html">SOFTWARE</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="search-block">
+
+                        <input type="search" name="q" placeholder="Search Your Item........">
+                        <input type="submit" value="найти" onclick="test();">
+                        <div class="search-btn "><img class="central-search" alt="icon" src="images/icons/search-icon.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</header>
+
+<section>
+    <div class="checkout--height">
+        <div class="container">
+            <div class="bread-crumb">
+                <p class="bred-crumb__text"><a class="bred-crumb__text" href="index.html">Home</a> / <a  class="bred-crumb__text" href="#">Desktop</a> / <a  class="bred-crumb__text" href="#"> Checkout </a> </p>
+            </div>
+
+                <div class="row">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+            <div class="checkout--title-box">
+               <h3 class="checkout--title">Checkout Information</h3>
+             </div>
+            <div class="checkout-box">
+                <div class="checkout-box__line">
+                    <p class="checkout-box__line__text"><span>STEP 1:</span> Check Out Information</p>
+                </div>
+                <div class="checkout-box__main-content-part">
+                    <div class="checkout-box__main-content-part--padding-top">
+                        <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <h3>NEW CUSTOMER</h3>
+                        <p>Checkout Option</p>
+
+                        <input checked type="radio" value="register" id="check" name="customer-switch" >
+
+                            <label class="checkout-box__form__radio" for="check"> REGISTER ACCOUNT  </label><br/>
+
+                        <input  type="radio" id="check2" value="guest" name="customer-switch">
+
+                            <label class="checkout-box__form__radio" for="check2"> GUEST ACCOUNT </label>
+
+                        <p class="checkout-box__main-content-part__text--small">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                        </p>
+                        <input class="checkout-box__main-content-part__btn" type="button" value="CONTINUE">
+
+                    </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="checkout-box__main-content-part login-form">
+
+
+                        <h3>RETURNING CUSTOMER</h3>
+                        <p>I’m a retuning customer</p>
+                                <div class="login-form-part">
+                                <p class="login-form-email">Email<span class="login-form--red login-form--padding">*</span>
+                                    <input type="email" pattern="email@mail.com" /><br/>
+                                </p>
+                                </div>
+                                <div class="login-form-part">
+                                    <p class="login-form-password">Password <span class="login-form--red">*</span>
+                                    <input type="password" placeholder="">
+                                    </p>
+                                </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="checkbox-line">
+                <p class="checkbox-line__text"><span>STEP 2:</span>  Billing Informationon</p>
+            </div>
+
+
+            <div class="checkbox-line">
+                <p class="checkbox-line__text"><span>STEP 3:</span>  Delivery Information</p>
+            </div>
+
+            <div class="checkbox-line">
+            <p class="checkbox-line__text"><span>STEP 4:</span>  Payment Methods</p>
+        </div>
+
+            <div class="checkbox-line">
+                <p class="checkbox-line__text"><span>STEP 5:</span>  Confirm Order</p>
+            </div>
+                </div>
+
+        </div>
+
+            <div class="col xl-3 col-lg-3 col-md-3 col-sm-12 col-12 mobile-hide">
+                <div class="banner-adversting">
+                    <p>BANNER</p>
+                </div>
+                <div class="banner-adversting">
+                    <p>BANNER</p>
+                </div>
+                <div class="banner-adversting-small">
+                    <p>BANNER</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+<section>
+
+
+    <div class="four-base">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rect-group">
+                        <div class="rectangle--green">
+                            <a href="#">
+                                <div class="green-rect__img">
+                                    <p class="rect-text">
+                                        <img class="rect__img--position"  src="images/icons/paper-plane-icon.png" alt="icon">
+                                        <span class="rect-text--style"> First Shipping</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rectangle--green">
+                            <a href="#">
+                                <div class="green-rect__img">
+                                    <p class="rect-text">
+                                        <img class="rect__img--position"  src="images/icons/lock-icon.png" alt="icon">
+                                        <span class="rect-text--style"> Secure Store</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rectangle--green">
+                            <a href="#">
+                                <div class="green-rect__img">
+                                    <p class="rect-text">
+                                        <img class="rect__img--position"  src="images/icons/watch-icon.png" alt="icon">
+                                        <span class="rect-text--style"> Save Time</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rectangle--green">
+                            <a href="#">
+                                <div class="green-rect__img">
+                                    <p class="rect-text">
+                                        <img class="rect__img--position"  src="images/icons/pay-icon.png" alt="icon">
+                                        <span class="rect-text--style"> Pay on Delivery</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="info-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="info-container_information">
+                        <div class="info-container-__title-box">
+                            <h3 class="info-block__title">INFORMATION</h3>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> ABOUT US</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> CUSTOMER SERVICE</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> PRIVACY POLICY</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> SITE MAP</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="info-container_information">
+                        <div class="info-container-__title-box">
+
+                            <h3 class="info-block__title"> WHY BUY FROM US</h3>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> ABOUT US</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> SHIPPING & RETURNS</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> INTERNATIONAL SHIPPING</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> AFFILIATES</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> GROUP SALES</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="info-container_information">
+                        <div class="info-container-__title-box">
+                            <h3 class="info-block__title">MY ACCOUNT</h3>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> SIGN IN</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black"  href="#"> VIEW CART</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> MY WHISHLIST</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> TRACK MY ORDER</a></li>
+                            <li class="footer-list__item"><a class="footer-list__link--black" href="#"> HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 ">
+                    <div class="info-container_information">
+                        <div class="info-container-__title-box">
+                            <h3 class="info-block__title">CONTACT</h3>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item"> BELARUS,MINSK</li>
+                            <li class="footer-list__item"> +375 29 000 000</li>
+                            <li class="footer-list__item"> +375 44 000 000</li>
+                            <li class="footer-list__item"> mag@mag.com</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-pay">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 ">
+                    <div class="info_pay__we-accept">
+                        <p class="info_pay__text">WE ACCEPT</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 ">
+                    <img class="footer-icon--down footer-icon--resize" src="images/icons/cards/visa_electron.png" alt="visa">
+                    <img class="footer-icon--down footer-icon--resize" src="images/icons/cards/master-card.png" alt="mc">
+                    <img class="footer-icon--down footer-icon--resize" src="images/icons/cards/american-express.png" alt="ae">
+                    <img class="footer-icon--down footer-icon--resize" src="images/icons/cards/cirrus.png" alt="cir">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 ">
+                    <div class="info_pay__we-accept">
+                        <p class="info_pay__text">FOLLOW US</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 ">
+
+                    <img class="footer-icon--down" src="images/icons/social-network/fb.png" alt="fb">
+                    <img class="footer-icon--down" src="images/icons/social-network/tw.png" alt="tw">
+                    <img class="footer-icon--down" src="images/icons/social-network/google.png" alt="google">
+                    <img class="footer-icon--down" src="images/icons/social-network/be.png" alt="be">
+                    <img  class="footer-icon--down"src="images/icons/social-network/ball.png" alt="ball">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="foot__title-box">
+                    <h3>Copyright by Pavel</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
 
 
 
 
 
-
-
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/less.js"></script>
-<script src="js/burger.js"></script>
 <script src="js/MyPagination.js"></script>
+<script src="js/burger.js"></script>
 <script src="js/wow.js"></script>
 
 
@@ -39,13 +443,26 @@
     var pager = new pag.Pager();
     $(document).ready(function() {
         // количество выводимых блоков
-        pager.paragraphsPerPage = 1;
+        pager.paragraphsPerPage = 3;
         // контентная часть
         pager.pagingContainer = $('#content');
         // обозначаем блок
         pager.paragraphs = $('div.this', pager.pagingContainer);
         pager.showPage(1);
     });
+
+
+    a = 'Я поиск!';
+    function test() {
+        console.log(a);
+    }
+
+    function downn() {
+        xn = '150px';
+        $("div.container.downjs").style.MarginTop = xn;
+    }
+
+
 </script>
 
 </body>
