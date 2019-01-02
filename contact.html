@@ -2,36 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>Main page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/corusel.css">
     <link rel="stylesheet/less" type="text/css" href="less/style.less" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
     <link rel="stylesheet/less" type="txt/css" href="less/media.less" />
-    <link rel="stylesheet" href="/css/animate.min.css" />
     <!-- ICON !-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
     <!-- FONTS GOOGLE !-->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200" rel="stylesheet">
 
-</head>
-<body>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>desktop</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
-    <link rel="stylesheet/less" type="txt/css" href="less/media.less" />
-    <link rel="stylesheet" href="/css/animate.min.css" />
-    <!-- ICON !-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-
-    <!-- FONTS GOOGLE !-->
 
 </head>
 <body>
@@ -42,13 +25,13 @@
             <div class="menuToggle"><img alt="menu" src="images/menu.svg"> </div>
             <ul class="menu clearfix">
 
-                <li class="mobile-navigation"><a href="account.html">Login</a></li>
+                <li class="mobile-navigation"><a href="item-card.html">Example item-card</a></li>
                 <br/><hr>
-                <li class="mobile-navigation"><a href="catalog-dasktop.html">Register</a></li>
+                <li class="mobile-navigation"><a href="contact.html">Contact</a></li>
                 <br/><hr>
-                <li class="mobile-navigation"><a href="catalog-page.html">My account</a></li>
+                <li class="mobile-navigation"><a href="checkout.html">Checkout</a></li>
                 <br/><hr>
-                <li class="mobile-navigation"><a href="contact.html">Catalog</a></li>
+                <li class="mobile-navigation"><a href="catalog-dasktop.html">Catalog</a></li>
                 <br/><hr>
 
             </ul>
@@ -172,6 +155,38 @@
         </div>
     </div>
 
+    <div class="corusel">
+        <input type="radio" id="i1" name="images" checked/>
+        <input type="radio" id="i2" name="images" />
+        <input type="radio" id="i3" name="images" />
+
+        <div class="slide_img" id="one">
+            <img src="images/corusel-items/items1.png" alt="item">
+            <img class="corusel--add" src="images/main-logo-phone.png" alt="phone">
+            <label class="prev" for="i3"><span></span></label>
+            <label class="next" for="i2"><span></span></label>
+        </div>
+
+        <div class="slide_img" id="two">
+            <img src="images/corusel-items/items1.png" alt="item">
+            <label class="prev" for="i1"><span></span></label>
+            <label class="next" for="i3"><span></span></label>
+        </div>
+
+        <div class="slide_img" id="three">
+            <img src="images/corusel-items/items1.png" alt="item">
+            <img class="corusel--add" src="images/main-logo-phone.png" alt="phone">
+            <label class="prev" for="i2"><span></span></label>
+            <label class="next" for="i1"><span></span></label>
+        </div>
+
+        <div id="nav_slide">
+            <label for="i1" class="dots" id="dot1"></label>
+            <label for="i2" class="dots" id="dot2"></label>
+            <label for="i3" class="dots" id="dot3"></label>
+        </div>
+    </div>
+
     <div class="four-base">
         <div class="container">
             <div class="row">
@@ -223,51 +238,185 @@
         </div>
 
     </div>
+
 </header>
 
 <section>
-
-
-    <div class="contact--height">
+    <div class="main-content-box">
         <div class="container">
-            <div class="bread-crumb">
-                <p class="bred-crumb__text"><a class="bred-crumb__text" href="index.html">Home</a> / <a  class="bred-crumb__text" href="#">Desktop</a> / <a  class="bred-crumb__text" href="contact.html"> Contact Information </a> </p>
-            </div>
+            <div class="col-lg-12  col-md-12">
+                <div class="items-react-one">
 
-            <div class="row">
-                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
-    <div class="checkout--title-box">
-        <h3 class="checkout--title">Contact Information</h3>
+                    <div class="items-react-one--green-line">
+                        <div class="row row--height-full">
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+                                <div class="to-left-items">
+                                    <img class="Left-bard" alt="icon" src="images/icons/left-bard.png">
+                                    <input class="btn-left" type="submit" value="найти" onclick="test();">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col- col--mobile-hide"></div>
+                            <div class="col-only-mobile col-10">
+                                <p class="rect-one_items--mobile">List of items</p>
+                            </div>
+                            <div class="col-lg-8 col-md-10 col-sm-10 col-10 col--mobile-hide">
+                                <div class="rect-one__btn-type-items active">
+                                    <a class="rect-one_items--color" href="item-card.html">Fetured </a>
+                                </div>
+                                <div class="rect-one__btn-type-items ">
+                                    <a class="rect-one_items--color unActive" href="item-card.html">New Items </a>
+                                </div>
+                                <div class="rect-one__btn-type-items ">
+                                    <a class="rect-one_items--color unActive" href="item-card.html">Top Seller </a>
+                                </div>
+                                <div class="rect-one__btn-type-items ">
+                                    <a class="rect-one_items--color unActive" href="item-card.html">New Items </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+                                <div class="to-left-items--float-right">
+                                    <img class="Left-bard" alt="icon" src="images/icons/right-bard.png">
+                                    <input class="btn-left" type="submit" value="найти" onclick="test();">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <ul class="list-items clearfix catalog">
+
+                        <li>
+                            <div class="card-wrapper">
+                                <a href="#" class="item">
+                                    <div class="item-photo">
+                                        <input class="item-card__btn-item-add " type="button" value="Добавить в корзину" onclick="test();">
+                                        <img src="images/main--phones-rect7.png" alt="item">
+                                    </div>
+                                    <p class="price">500 $</p>
+                                    <div class="card-item__about">
+                                        <p class="card-title"> Smart Phone  Primo V1</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="card-wrapper">
+                                <a href="#" class="item">
+                                    <div class="item-photo">
+                                        <input class="item-card__btn-item-add " type="button" value="Добавить в корзину" onclick="test();">
+                                        <img src="images/main--phones-rect7.png" alt="item">
+                                    </div>
+                                    <p class="price">500 $</p>
+                                    <div class="card-item__about">
+                                        <p class="card-title"> Smart Phone  Primo V1</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="card-wrapper">
+                                <a href="#" class="item">
+                                    <div class="item-photo">
+                                        <input class="item-card__btn-item-add" type="button" value="Добавить в корзину" onclick="test();">
+                                        <img src="images/main-phones-rect2.png" alt="item">
+                                    </div>
+                                    <p class="price">500 $</p>
+                                    <div class="card-item__about">
+                                        <p class="card-title"> Smart Phone  Primo V1</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
 
     </div>
-                    <div class="contact-main-box">
-                    <p class="contact-box__information">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <form>
-                            <input class="contact-btn-text" type="text" placeholder="Name" required>
-                            <input class="contact-btn-text" type="email" placeholder="Email" required>
-                            <textarea   placeholder="Type Your Message" required></textarea>
-                            <input class="checkout-box__main-content-part__btn" type="button" value="SEND">
-                        </form>
-                </div>
+</section>
 
-                </div>
-                <div class="col xl-3 col-lg-3 col-md-3 col-sm-12 col-12 mobile-hide">
-                    <div class="banner-adversting">
-                        <p>BANNER</p>
-                    </div>
-                    <div class="banner-adversting">
-                        <p>BANNER</p>
-                    </div>
-                </div>
-
+<section>
+    <div class="subscribe-container">
+        <div class="container">
+            <h2 class="sub-title">SUBCRIBE FOR GET OFFER UPDATE</h2>
+            <p class="sub-title--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="sub-input--center">
+                <input class="sub-input" type="text" placeholder="Type your email">
+                <input class="btn-go" type="button" value="Lets go!" onclick="test();">
             </div>
+
         </div>
     </div>
 </section>
 
+<section>
+    <div class="main-content-box-two">
+        <div class="container">
+
+            <div class="stock-box">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="box-img">
+                            <img class="stock-box__img" src="images/main-phones-rect4.png" alt="phone">
+                            <div class="stock-box__box-img__elipse">
+                                <p class="stock-box__stock-price--old">$ 1150</p>
+                                <p class="stock-box__stock-price">$ 2150</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" >
+                        <p class="stock-title">50% OFF<br/>
+                            <span class="stock-title--small">For walton Primo GH+</span>
+                        </p>
+                        <p class="stock-about__title">
+                            Power packed performance
+                        </p>
+                        <p class="stock-about">
+                            Powered by a mighty 1.3 GHz Quad Core Processor and
+                            1 GB fast RAM, the Primo GH+ allows seamless multitasking,
+                            faster webpage loading, smoother UI transitions and ultra
+                            fast power-up.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-block__title">
+                    <p class="brands-block__title--center">Our brands</p>
+                </div>
+                <div class="brands-list--block">
+                    <div class="brands-block_brand-1">
+                        <img class="brand-img" src="images/brands_logo/brand1.png" alt="brand">
+                    </div>
+                    <div class="brands-block_brand-2">
+                        <img class="brand-img" src="images/brands_logo/brand2.png" alt="brand">
+                    </div>
+                    <div class="brands-block_brand-3">
+                        <img class="brand-img" src="images/brands_logo/brand3.png" alt="brand">
+                    </div>
+                    <div class="brands-block_brand-4">
+                        <img class="brand-img" src="images/brands_logo/brand4.png" alt="brand">
+                    </div>
+                    <div class="brands-block_brand-5">
+                        <img class="brand-img" src="images/brands_logo/brand5.png" alt="brand">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
+</section>
 
 <footer>
     <div class="info-block">
@@ -361,7 +510,7 @@
                     <img class="footer-icon--down" src="images/icons/social-network/tw.png" alt="tw">
                     <img class="footer-icon--down" src="images/icons/social-network/google.png" alt="google">
                     <img class="footer-icon--down" src="images/icons/social-network/be.png" alt="be">
-                    <img  class="footer-icon--down"src="images/icons/social-network/ball.png" alt="ball">
+                    <img  class="footer-icon--down" src="images/icons/social-network/ball.png" alt="ball">
                 </div>
 
             </div>
@@ -382,29 +531,46 @@
     </div>
 </footer>
 
-<script src="js/jquery.min.js"></script>
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/less.js"></script>
-<script src="js/burger.js"></script>
 <script src="js/MyPagination.js"></script>
+<script src="js/burger.js"></script>
 <script src="js/wow.js"></script>
 
 
 <script>
 
-new WOW().init();
+    new WOW().init();
 
-<!-- Пагинация инициализация. Сам скрипт в MyPagination.js  !-->
+    <!-- Пагинация инициализация. Сам скрипт в MyPagination.js  !-->
 
-var pager = new pag.Pager();
-$(document).ready(function() {
-    // количество выводимых блоков
-    pager.paragraphsPerPage = 1;
-    // контентная часть
-    pager.pagingContainer = $('#content');
-    // обозначаем блок
-    pager.paragraphs = $('div.this', pager.pagingContainer);
-    pager.showPage(1);
-});
+    var pager = new pag.Pager();
+    $(document).ready(function() {
+        // количество выводимых блоков
+        pager.paragraphsPerPage = 3;
+        // контентная часть
+        pager.pagingContainer = $('#content');
+        // обозначаем блок
+        pager.paragraphs = $('div.this', pager.pagingContainer);
+        pager.showPage(1);
+    });
+
+
+    a = 'Я поиск!';
+    function test() {
+        console.log(a);
+    }
+
+    function downn() {
+        xn = '150px';
+        $("div.container.downjs").style.MarginTop = xn;
+    }
+
+
 </script>
 
 </body>
